@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Krupa Patel — Pharmaceutical Quality Assurance &amp; Quality Control</title>
+<meta name="description" content="Krupa Patel — QA/QC professional in cGMP pharmaceutical manufacturing. Batch record review, deviation and CAPA investigation, HPLC/UV-Vis analysis, ICH Q2 method validation.">
+
+<!--
+  ════════════════════════════════════════════════════════════════
+  PHOTOS — how to add yours (2 minutes)
+  1. Put your image files in the SAME folder as this HTML file.
+  2. Name them exactly:
+        portrait.jpg   → headshot (square or 4:5, ~800px wide)
+        work-1.jpg     → lab / instrument photo
+        work-2.jpg     → documentation / batch record photo
+        work-3.jpg     → manufacturing floor / gowning photo
+        work-4.jpg     → training / presentation photo
+        work-5.jpg     → certificate, poster or project photo
+  3. Refresh the page. Until then, styled placeholders show instead.
+  ════════════════════════════════════════════════════════════════
+-->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --ink:#0C1327;
+  --ink-2:#41506E;
+  --ink-3:#7A88A3;
+  --bg:#F5F8FC;
+  --card:#FFFFFF;
+  --line:#E3EAF3;
+
+  --blue:#2B59FF;
+  --aqua:#00C2A8;
+  --violet:#7B4DFF;
+  --amber:#FFB020;
+  --coral:#FF5E7A;
+  --deep:#070C1E;
+
+  --grad:linear-gradient(115deg,#2B59FF,#7B4DFF 46%,#00C2A8);
+  --shadow:0 18px 44px -22px rgba(12,19,39,.32);
+  --shadow-lg:0 34px 70px -30px rgba(12,19,39,.42);
+
+  --disp:"Sora",system-ui,sans-serif;
+  --body:"Manrope",system-ui,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,monospace;
+  --r:20px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{
+  margin:0;background:var(--bg);color:var(--ink);
+  font-family:var(--body);font-size:16.5px;line-height:1.65;overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--blue);outline-offset:3px;border-radius:6px}
+.wrap{width:min(1180px,92vw);margin:0 auto}
+
+#bar{position:fixed;top:0;left:0;height:3px;width:0;background:var(--grad);z-index:200;transition:width .1s linear}
+
+/* ═══ nav ═══ */
+nav{position:fixed;top:14px;left:0;right:0;z-index:150;transition:transform .35s}
+.navin{
+  width:min(1180px,92vw);margin:0 auto;display:flex;align-items:center;gap:18px;
+  background:rgba(255,255,255,.84);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
+  border:1px solid rgba(255,255,255,.75);box-shadow:var(--shadow);
+  border-radius:999px;padding:9px 10px 9px 20px;
+}
+.brand{display:flex;align-items:center;gap:10px;font-family:var(--disp);font-weight:700;font-size:.98rem;text-decoration:none;white-space:nowrap}
+.dot{width:11px;height:11px;border-radius:50%;background:var(--grad);animation:pulse 2.6s ease-in-out infinite}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 4px rgba(43,89,255,.16)}50%{box-shadow:0 0 0 10px rgba(43,89,255,.04)}}
+.navlinks{display:none;gap:4px;margin-left:auto}
+@media(min-width:920px){.navlinks{display:flex}}
+.navlinks a{text-decoration:none;font-size:.86rem;font-weight:600;color:var(--ink-2);padding:8px 14px;border-radius:999px;transition:.2s}
+.navlinks a:hover{color:var(--blue);background:rgba(43,89,255,.08)}
+.navlinks a.on{color:#fff;background:var(--ink)}
+.navcta{margin-left:auto;text-decoration:none;font-weight:700;font-size:.86rem;color:#fff;background:var(--ink);padding:11px 20px;border-radius:999px;white-space:nowrap;transition:.25s}
+@media(min-width:920px){.navcta{margin-left:0}}
+.navcta:hover{background:var(--blue);transform:translateY(-1px)}
+
+/* ═══ hero ═══ */
+header{position:relative;background:var(--deep);color:#fff;overflow:hidden;padding:148px 0 108px;border-radius:0 0 42px 42px}
+.blob{position:absolute;border-radius:50%;filter:blur(90px);opacity:.55;pointer-events:none}
+.b1{width:620px;height:620px;background:#2B59FF;top:-220px;left:-160px;animation:float1 19s ease-in-out infinite}
+.b2{width:520px;height:520px;background:#7B4DFF;bottom:-240px;left:34%;animation:float2 23s ease-in-out infinite}
+.b3{width:480px;height:480px;background:#00C2A8;top:-90px;right:-140px;opacity:.42;animation:float3 17s ease-in-out infinite}
+.b4{width:320px;height:320px;background:#FF5E7A;bottom:-120px;right:12%;opacity:.3;animation:float1 25s ease-in-out infinite reverse}
+@keyframes float1{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(70px,60px) scale(1.12)}}
+@keyframes float2{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(-80px,-50px) scale(1.15)}}
+@keyframes float3{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(-50px,70px) scale(1.08)}}
+header::after{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background-image:linear-gradient(rgba(255,255,255,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.045) 1px,transparent 1px);
+  background-size:58px 58px;
+  -webkit-mask-image:radial-gradient(ellipse at 50% 40%,#000,transparent 78%);
+  mask-image:radial-gradient(ellipse at 50% 40%,#000,transparent 78%)
+}
+.hero{position:relative;z-index:3;display:grid;gap:52px;align-items:center}
+@media(min-width:940px){.hero{grid-template-columns:1.12fr .88fr;gap:60px}}
+
+.badge{display:inline-flex;align-items:center;gap:9px;background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.18);padding:7px 16px 7px 11px;border-radius:999px;font-size:.78rem;font-weight:600}
+.badge i{width:7px;height:7px;border-radius:50%;background:var(--aqua);box-shadow:0 0 10px var(--aqua);animation:blip 1.8s infinite}
+@keyframes blip{0%,100%{opacity:1}50%{opacity:.3}}
+
+h1{font-family:var(--disp);font-weight:800;font-size:clamp(2.55rem,6.6vw,4.5rem);line-height:1.04;letter-spacing:-.035em;margin:22px 0 0}
+h1 .g{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.rotator{font-family:var(--disp);font-weight:600;font-size:clamp(1rem,2.5vw,1.42rem);margin-top:16px;min-height:2.1em;display:flex;align-items:center;gap:10px;color:#DCE5F5}
+.caret{width:2px;height:1.15em;background:var(--aqua);animation:blink 1s steps(2) infinite}
+@keyframes blink{50%{opacity:0}}
+.lead{color:#B7C4DC;font-size:1.05rem;max-width:54ch;margin:20px 0 0}
+.lead b{color:#fff;font-weight:700}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.btn{text-decoration:none;font-weight:700;font-size:.92rem;padding:15px 28px;border-radius:999px;display:inline-flex;align-items:center;gap:9px;transition:.28s cubic-bezier(.2,.8,.2,1);border:0;cursor:pointer;font-family:var(--body)}
+.btn.p{background:var(--grad);color:#fff;background-size:200% 100%;box-shadow:0 14px 34px -12px rgba(43,89,255,.7)}
+.btn.p:hover{background-position:100% 0;transform:translateY(-3px);box-shadow:0 20px 44px -12px rgba(123,77,255,.75)}
+.btn.s{background:rgba(255,255,255,.09);color:#fff;border:1px solid rgba(255,255,255,.22)}
+.btn.s:hover{background:rgba(255,255,255,.17);transform:translateY(-3px)}
+
+.portrait-wrap{position:relative;justify-self:center;width:min(400px,84vw)}
+.ring{position:absolute;inset:-16px;border-radius:34px;background:var(--grad);filter:blur(24px);opacity:.6;animation:hue 9s linear infinite}
+@keyframes hue{0%{filter:blur(24px) hue-rotate(0deg)}100%{filter:blur(24px) hue-rotate(360deg)}}
+.portrait{position:relative;border-radius:30px;overflow:hidden;aspect-ratio:4/5;background:linear-gradient(150deg,#16204A,#0B1130);border:1px solid rgba(255,255,255,.16);box-shadow:0 40px 80px -30px rgba(0,0,0,.75);animation:bob 7s ease-in-out infinite}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
+.portrait img{width:100%;height:100%;object-fit:cover}
+.ph{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;text-align:center;padding:26px}
+.ph .init{width:96px;height:96px;border-radius:50%;background:var(--grad);display:grid;place-items:center;font-family:var(--disp);font-weight:800;font-size:2rem;color:#fff}
+.ph b{font-family:var(--disp);color:#fff;font-size:1rem}
+.ph small{font-family:var(--mono);font-size:.67rem;color:#8DA0C4;line-height:1.7}
+.chipfloat{position:absolute;background:rgba(255,255,255,.96);color:var(--ink);border-radius:14px;padding:11px 15px;box-shadow:var(--shadow-lg);font-size:.78rem;font-weight:700;display:flex;align-items:center;gap:9px;white-space:nowrap}
+.chipfloat em{font-style:normal;font-family:var(--mono);font-size:.65rem;color:var(--ink-3);display:block;font-weight:500;margin-top:1px}
+.cf1{top:11%;left:-9%;animation:bob 6s ease-in-out infinite .4s}
+.cf2{bottom:17%;right:-11%;animation:bob 6.6s ease-in-out infinite .9s}
+.cf3{bottom:-3%;left:5%;animation:bob 7.4s ease-in-out infinite 1.4s}
+.sw{width:9px;height:9px;border-radius:3px;flex:none}
+@media(max-width:520px){.cf1{left:-2%}.cf2{right:-2%}.cf3{display:none}}
+
+/* ═══ marquee ═══ */
+.marquee{background:var(--ink);color:#fff;padding:16px 0;overflow:hidden;white-space:nowrap;position:relative;z-index:4}
+.mtrack{display:inline-flex;animation:slide 32s linear infinite;font-family:var(--mono);font-size:.8rem}
+.mtrack span{display:inline-flex;gap:34px;padding-right:34px;color:#8DA0C4}
+.mtrack b{color:#fff;font-weight:500}
+@keyframes slide{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* ═══ sections ═══ */
+section{padding:clamp(62px,9vw,108px) 0}
+.eyebrow{display:inline-flex;align-items:center;gap:9px;font-family:var(--mono);font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--blue);font-weight:500;margin-bottom:14px}
+.eyebrow::before{content:"";width:26px;height:2px;background:var(--grad);border-radius:2px}
+h2{font-family:var(--disp);font-weight:700;font-size:clamp(1.8rem,4.4vw,2.85rem);line-height:1.12;letter-spacing:-.03em;margin:0 0 16px}
+.sub{color:var(--ink-2);max-width:62ch;font-size:1.03rem;margin:0 0 44px}
+
+.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+@media(min-width:840px){.stats{grid-template-columns:repeat(4,1fr)}}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:26px 22px;position:relative;overflow:hidden;transition:.35s cubic-bezier(.2,.8,.2,1)}
+.stat::before{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:var(--c,#2B59FF)}
+.stat:hover{transform:translateY(-7px);box-shadow:var(--shadow-lg);border-color:transparent}
+.stat b{font-family:var(--disp);font-weight:800;font-size:clamp(1.9rem,4.4vw,2.6rem);display:block;line-height:1;letter-spacing:-.03em;color:var(--c)}
+.stat span{font-size:.85rem;color:var(--ink-2);font-weight:600;display:block;margin-top:9px;line-height:1.45}
+
+.cards{display:grid;gap:18px}
+@media(min-width:780px){.cards{grid-template-columns:1fr 1fr}}
+.xc{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:28px;position:relative;overflow:hidden;transition:.35s cubic-bezier(.2,.8,.2,1)}
+.xc::after{content:"";position:absolute;width:200px;height:200px;border-radius:50%;background:var(--c);opacity:.09;top:-92px;right:-72px;transition:.5s}
+.xc:hover{transform:translateY(-7px);box-shadow:var(--shadow-lg);border-color:transparent}
+.xc:hover::after{transform:scale(1.55);opacity:.15}
+.ico{width:48px;height:48px;border-radius:14px;display:grid;place-items:center;background:var(--c);color:#fff;margin-bottom:16px;position:relative;z-index:2}
+.ico svg{width:24px;height:24px}
+.xc h3{font-family:var(--disp);font-size:1.16rem;font-weight:700;margin:0 0 6px;letter-spacing:-.02em;position:relative;z-index:2}
+.xc p{color:var(--ink-2);font-size:.94rem;margin:0 0 18px;position:relative;z-index:2}
+.chips{display:flex;flex-wrap:wrap;gap:7px;position:relative;z-index:2}
+.chips span{font-family:var(--mono);font-size:.71rem;background:var(--bg);border:1px solid var(--line);padding:6px 11px;border-radius:9px;color:var(--ink-2)}
+
+/* timeline */
+.tl{position:relative;padding-left:34px}
+.tl::before{content:"";position:absolute;left:9px;top:8px;bottom:8px;width:2px;background:linear-gradient(180deg,#2B59FF,#7B4DFF,#00C2A8)}
+.tli{position:relative;margin-bottom:20px}
+.tli::before{content:"";position:absolute;left:-33px;top:26px;width:20px;height:20px;border-radius:50%;background:#fff;border:4px solid var(--c);z-index:2}
+.tlcard{background:var(--card);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;transition:.35s cubic-bezier(.2,.8,.2,1)}
+.tlcard:hover{transform:translateX(6px);box-shadow:var(--shadow-lg);border-color:transparent}
+.tlh{padding:20px 24px;display:flex;flex-wrap:wrap;gap:8px 18px;justify-content:space-between;align-items:baseline;border-bottom:1px solid var(--line)}
+.tlh h3{font-family:var(--disp);font-size:1.12rem;font-weight:700;margin:0;letter-spacing:-.02em}
+.tlh .org{display:block;font-family:var(--body);font-weight:600;font-size:.92rem;color:var(--c);margin-top:3px}
+.tlh time{font-family:var(--mono);font-size:.73rem;color:var(--ink-3);background:var(--bg);padding:6px 12px;border-radius:999px;white-space:nowrap}
+.tlcard ul{list-style:none;margin:0;padding:8px 24px 22px}
+.tlcard li{position:relative;padding:9px 0 9px 26px;font-size:.95rem;color:var(--ink-2)}
+.tlcard li::before{content:"";position:absolute;left:0;top:17px;width:9px;height:9px;border-radius:3px;background:var(--c);opacity:.85}
+.tlcard li strong{color:var(--ink);font-weight:700}
+.tlcard li .hl{color:var(--ink);font-weight:800}
+
+/* gallery */
+.gal{display:grid;gap:16px;grid-template-columns:repeat(2,1fr)}
+@media(min-width:900px){.gal{grid-template-columns:repeat(6,1fr)}}
+.gi{position:relative;border-radius:var(--r);overflow:hidden;background:var(--card);border:1px solid var(--line);min-height:200px;transition:.4s cubic-bezier(.2,.8,.2,1)}
+@media(min-width:900px){
+  .gi{min-height:252px}
+  .gi.big{grid-column:span 3}
+  .gi.sm{grid-column:span 3}
+  .gi.third{grid-column:span 2}
+}
+.gi:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg);border-color:transparent}
+.gi img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.2,.8,.2,1)}
+.gi:hover img{transform:scale(1.07)}
+.veil{position:absolute;inset:0;background:linear-gradient(to top,rgba(7,12,30,.9),rgba(7,12,30,.18) 55%,transparent);opacity:0;transition:.4s}
+.gi:hover .veil{opacity:1}
+.gcap{position:absolute;left:20px;right:20px;bottom:18px;z-index:3;transform:translateY(10px);opacity:0;transition:.4s;color:#fff;margin:0}
+.gi:hover .gcap{transform:none;opacity:1}
+.gcap b{font-family:var(--disp);font-size:1rem;display:block}
+.gcap span{font-size:.82rem;color:#C7D3EA}
+.gph{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:11px;text-align:center;padding:22px;background:var(--pg)}
+.gph svg{width:36px;height:36px}
+.gph b{font-family:var(--disp);font-size:.96rem;color:#fff}
+.gph small{font-family:var(--mono);font-size:.65rem;color:rgba(255,255,255,.78)}
+
+/* investigation */
+.inv{background:var(--card);border:1px solid var(--line);border-radius:26px;overflow:hidden;box-shadow:var(--shadow)}
+.invh{padding:24px 28px;background:var(--deep);color:#fff;position:relative;overflow:hidden}
+.invh::before{content:"";position:absolute;width:340px;height:340px;border-radius:50%;background:#7B4DFF;filter:blur(70px);opacity:.5;top:-190px;right:-70px}
+.invh h3{position:relative;font-family:var(--disp);font-size:1.22rem;margin:0;font-weight:700}
+.invh p{position:relative;margin:6px 0 0;color:#B7C4DC;font-size:.86rem;font-family:var(--mono);letter-spacing:.04em}
+.invb{padding:26px 28px 30px}
+.devbox{background:linear-gradient(100deg,rgba(255,94,122,.1),rgba(255,176,32,.1));border:1px solid rgba(255,94,122,.28);border-radius:16px;padding:18px 20px;margin-bottom:24px;color:var(--ink-2)}
+.devbox b{display:block;font-family:var(--mono);font-size:.67rem;letter-spacing:.14em;text-transform:uppercase;color:var(--coral);margin-bottom:6px}
+.whys{list-style:none;margin:0 0 22px;padding:0;counter-reset:w}
+.whys li{display:flex;gap:16px;align-items:flex-start;padding:14px 16px;border-radius:14px;margin-bottom:8px;background:var(--bg);opacity:.34;transform:translateX(-8px);transition:.5s cubic-bezier(.2,.8,.2,1);font-size:.96rem;color:var(--ink-2)}
+.whys li.rev{opacity:1;transform:none;background:linear-gradient(100deg,rgba(43,89,255,.08),rgba(0,194,168,.07));color:var(--ink)}
+.whys li::before{counter-increment:w;content:"WHY " counter(w);font-family:var(--mono);font-size:.63rem;letter-spacing:.08em;color:var(--ink-3);background:#fff;border:1px solid var(--line);padding:5px 9px;border-radius:8px;white-space:nowrap;margin-top:1px}
+.whys li.rev::before{color:#fff;background:var(--grad);border-color:transparent}
+.invact{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.btn.dark{background:var(--ink);color:#fff}
+.btn.dark:hover{background:var(--blue);transform:translateY(-2px)}
+.btn.line{background:transparent;color:var(--ink-2);border:1px solid var(--line)}
+.btn.line:hover{border-color:var(--blue);color:var(--blue)}
+.btn[disabled]{opacity:.4;cursor:not-allowed;transform:none}
+.prog{margin-left:auto;font-family:var(--mono);font-size:.75rem;color:var(--ink-3)}
+.outcome{margin-top:24px;padding-top:24px;border-top:1px dashed var(--line);display:none}
+.outcome.show{display:block;animation:rise .55s cubic-bezier(.2,.8,.2,1)}
+@keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.outcome h4{font-family:var(--disp);font-size:1.04rem;margin:0 0 8px;display:flex;align-items:center;gap:9px}
+.outcome h4 i{width:10px;height:10px;border-radius:50%;background:var(--aqua);box-shadow:0 0 12px var(--aqua)}
+.capa{display:grid;gap:12px;margin-top:20px}
+@media(min-width:780px){.capa{grid-template-columns:repeat(3,1fr)}}
+.capa div{border:1px solid var(--line);border-radius:16px;padding:16px;background:var(--bg);border-top:3px solid var(--c)}
+.capa b{font-family:var(--mono);font-size:.63rem;letter-spacing:.12em;text-transform:uppercase;color:var(--c);display:block;margin-bottom:6px}
+.capa p{margin:0;font-size:.91rem;color:var(--ink-2)}
+.note{margin:0;padding:16px 28px;background:var(--bg);border-top:1px solid var(--line);font-family:var(--mono);font-size:.69rem;color:var(--ink-3);line-height:1.75}
+
+/* research */
+.rgrid{display:grid;gap:22px;align-items:start}
+@media(min-width:920px){.rgrid{grid-template-columns:1.05fr .95fr}}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:28px}
+.metric{margin-bottom:20px}
+.mrow{display:flex;justify-content:space-between;align-items:baseline;gap:14px;margin-bottom:8px}
+.mrow span{font-size:.92rem;color:var(--ink-2);font-weight:600}
+.mrow b{font-family:var(--disp);font-size:1.28rem;color:var(--c);font-weight:800}
+.track{height:9px;background:var(--bg);border-radius:999px;overflow:hidden;border:1px solid var(--line)}
+.fill{height:100%;width:0;border-radius:999px;background:var(--grad);transition:width 1.3s cubic-bezier(.2,.8,.2,1)}
+.chromcard{background:var(--deep);border-radius:var(--r);padding:22px;color:#fff;position:relative;overflow:hidden;margin-top:24px}
+.chromcard::before{content:"";position:absolute;width:300px;height:300px;border-radius:50%;background:#00C2A8;filter:blur(80px);opacity:.32;bottom:-160px;left:-60px}
+.chromcard h4{position:relative;font-family:var(--disp);font-size:1rem;margin:0 0 4px}
+.chromcard p{position:relative;margin:0 0 12px;font-family:var(--mono);font-size:.65rem;color:#8DA0C4;letter-spacing:.06em}
+.chromcard svg{position:relative;width:100%;height:auto;display:block}
+
+/* education */
+.edu{display:grid;gap:16px}
+@media(min-width:780px){.edu{grid-template-columns:1fr 1fr}}
+.ec{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:26px;transition:.35s cubic-bezier(.2,.8,.2,1)}
+.ec:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg);border-color:transparent}
+.ec .cap{width:44px;height:44px;border-radius:13px;background:var(--c);display:grid;place-items:center;margin-bottom:14px}
+.ec h3{font-family:var(--disp);font-size:1.08rem;margin:0 0 4px;letter-spacing:-.02em}
+.ec p{margin:0;color:var(--ink-2);font-size:.93rem}
+.ec time{display:inline-block;margin-top:12px;font-family:var(--mono);font-size:.71rem;color:var(--c);background:var(--bg);border:1px solid var(--line);padding:5px 12px;border-radius:999px}
+
+/* contact */
+.cta{position:relative;overflow:hidden;border-radius:32px;background:var(--deep);color:#fff;padding:clamp(38px,6vw,66px);text-align:center}
+.cta h2{position:relative;color:#fff}
+.cta .lead2{position:relative;color:#B7C4DC;max-width:52ch;margin:0 auto 30px}
+.cta .btns{position:relative;justify-content:center}
+.trust{position:relative;margin-top:38px;padding-top:26px;border-top:1px solid rgba(255,255,255,.14);display:grid;gap:18px;text-align:left}
+@media(min-width:780px){.trust{grid-template-columns:repeat(3,1fr)}}
+.trust b{font-family:var(--mono);font-size:.65rem;letter-spacing:.14em;text-transform:uppercase;color:#7A8CB0;display:block;margin-bottom:5px}
+.trust a,.trust p{margin:0;font-weight:600;font-size:.93rem;text-decoration:none;word-break:break-word}
+.trust a:hover{color:var(--aqua)}
+.attest{position:relative;margin:26px auto 0;font-size:.8rem;color:#8DA0C4;line-height:1.75;max-width:78ch}
+footer{padding:30px 0 44px;text-align:center;font-family:var(--mono);font-size:.73rem;color:var(--ink-3)}
+
+.rv{opacity:0;transform:translateY(26px);transition:opacity .75s cubic-bezier(.2,.8,.2,1),transform .75s cubic-bezier(.2,.8,.2,1)}
+.rv.in{opacity:1;transform:none}
+
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+  .rv{opacity:1;transform:none}
+  .whys li{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<div id="bar"></div>
+
+<nav>
+  <div class="navin">
+    <a class="brand" href="#top"><span class="dot"></span>Krupa&nbsp;Patel</a>
+    <div class="navlinks">
+      <a href="#expertise">Expertise</a>
+      <a href="#experience">Experience</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#method">Method</a>
+      <a href="#research">Research</a>
+    </div>
+    <a class="navcta" href="#contact">Get in touch</a>
+  </div>
+</nav>
+
+<header id="top">
+  <div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div><div class="blob b4"></div>
+  <div class="wrap hero">
+    <div>
+      <span class="badge"><i></i> Open to QA / QC roles · New Jersey, USA</span>
+      <h1>Krupa Patel<br><span class="g">Quality you can verify.</span></h1>
+      <div class="rotator"><span id="rot"></span><span class="caret"></span></div>
+      <p class="lead">I review what goes out the door. <b>Batch record review, deviation &amp; CAPA investigation, and ICH Q2 method validation</b> in cGMP-regulated pharmaceutical manufacturing — from raw material verification to finished product release.</p>
+      <div class="btns">
+        <a class="btn p" href="#contact">Let's talk
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a class="btn s" href="#experience">View experience</a>
+      </div>
+    </div>
+
+    <div class="portrait-wrap">
+      <div class="ring"></div>
+      <div class="portrait">
+        <img src="portrait.jpg" alt="Krupa Patel" id="portrait" onerror="this.remove();var p=document.getElementById('portraitPh');if(p)p.style.display='flex'">
+        <div class="ph" id="portraitPh" style="display:none">
+          <div class="init">KP</div>
+          <b>Your photo goes here</b>
+          <small>Save a headshot as<br>portrait.jpg in this folder,<br>then refresh the page</small>
+        </div>
+      </div>
+      <div class="chipfloat cf1"><span class="sw" style="background:#2B59FF"></span><span>21 CFR 210/211<em>cGMP compliance</em></span></div>
+      <div class="chipfloat cf2"><span class="sw" style="background:#00C2A8"></span><span>HPLC · UV-Vis<em>Analytical testing</em></span></div>
+      <div class="chipfloat cf3"><span class="sw" style="background:#FFB020"></span><span>M.S. 2026<em>Rowan University</em></span></div>
+    </div>
+  </div>
+</header>
+
+<div class="marquee" aria-hidden="true">
+  <div class="mtrack">
+    <span><b>cGMP</b>·<b>21 CFR Part 210/211</b>·<b>21 CFR Part 11</b>·<b>ICH Q2</b>·<b>GLP</b>·<b>CAPA</b>·<b>OOS Investigation</b>·<b>USP Apparatus II</b>·<b>Batch Disposition</b>·<b>Process Validation</b>·<b>Data Integrity</b>·<b>Root Cause Analysis</b>·</span>
+    <span><b>cGMP</b>·<b>21 CFR Part 210/211</b>·<b>21 CFR Part 11</b>·<b>ICH Q2</b>·<b>GLP</b>·<b>CAPA</b>·<b>OOS Investigation</b>·<b>USP Apparatus II</b>·<b>Batch Disposition</b>·<b>Process Validation</b>·<b>Data Integrity</b>·<b>Root Cause Analysis</b>·</span>
+  </div>
+</div>
+
+<section id="impact">
+  <div class="wrap">
+    <div class="rv">
+      <span class="eyebrow">Track record</span>
+      <h2>Numbers from the floor</h2>
+      <p class="sub">Figures below come from work performed at Fanal Pharmaceutical, Dirghayu Medical Store and Arogya Jyoti Pharmacy. Each one is self-reported and I'm happy to walk through the detail behind it.</p>
+    </div>
+    <div class="stats rv">
+      <div class="stat" style="--c:#2B59FF"><b data-n="50" data-suf="+">0</b><span>Batch records reviewed monthly</span></div>
+      <div class="stat" style="--c:#7B4DFF"><b data-n="8">0</b><span>Deviation investigations &amp; CAPAs authored</span></div>
+      <div class="stat" style="--c:#00C2A8"><b data-n="99.8" data-suf="%" data-dec="1">0</b><span>Batch documentation compliance</span></div>
+      <div class="stat" style="--c:#FFB020"><b data-n="18" data-suf="%">0</b><span>Reduction in batch rejections</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="expertise">
+  <div class="wrap">
+    <div class="rv">
+      <span class="eyebrow">What I do</span>
+      <h2>Four areas I work in</h2>
+      <p class="sub">Hands-on across the quality lifecycle — from the analytical bench to the batch release decision.</p>
+    </div>
+    <div class="cards rv">
+      <article class="xc" style="--c:#2B59FF">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 15l2 2 4-4"/></svg></div>
+        <h3>Quality assurance</h3>
+        <p>Primary reviewer on oral liquid batch records — catching documentation deviations before product release, not after.</p>
+        <div class="chips"><span>Batch record review</span><span>Batch disposition</span><span>SOP compliance</span><span>In-process controls</span><span>Release support</span></div>
+      </article>
+
+      <article class="xc" style="--c:#00C2A8">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3v6.5L4.2 18a2 2 0 0 0 1.7 3h12.2a2 2 0 0 0 1.7-3L15 9.5V3"/><path d="M8 3h8M7.5 14h9"/></svg></div>
+        <h3>Quality control &amp; analytics</h3>
+        <p>Generating the data that release decisions rest on, under GLP and ICH conditions.</p>
+        <div class="chips"><span>HPLC</span><span>UV-Vis</span><span>FTIR</span><span>TGA</span><span>DLS</span><span>Dissolution · USP App. II</span><span>Stability testing</span><span>Moisture analysis</span></div>
+      </article>
+
+      <article class="xc" style="--c:#7B4DFF">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5M11 8v3l2 2"/></svg></div>
+        <h3>Investigation &amp; CAPA</h3>
+        <p>Eight investigations closed using structured root cause analysis — treating the system, not the symptom.</p>
+        <div class="chips"><span>5-Why</span><span>Fishbone</span><span>Deviation handling</span><span>OOS investigation</span><span>CAPA</span><span>Effectiveness checks</span></div>
+      </article>
+
+      <article class="xc" style="--c:#FFB020">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 3 7l9 4 9-4-9-4Z"/><path d="M3 12l9 4 9-4M3 17l9 4 9-4"/></svg></div>
+        <h3>Validation &amp; compliance</h3>
+        <p>Method validation and transfer under ICH Q2, with documentation built to survive an audit.</p>
+        <div class="chips"><span>Method development</span><span>Method validation</span><span>Method transfer</span><span>Process validation</span><span>Equipment qualification</span><span>IQ/OQ support</span><span>21 CFR Part 11</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <div class="rv">
+      <span class="eyebrow">Experience</span>
+      <h2>Where I've done it</h2>
+      <p class="sub">Three regulated environments — a pharmaceutical manufacturer, a retail pharmacy, and a GMP-certified production facility.</p>
+    </div>
+
+    <div class="tl rv">
+      <div class="tli" style="--c:#2B59FF">
+        <div class="tlcard">
+          <div class="tlh">
+            <h3>Quality Assurance Intern<span class="org">Fanal Pharmaceutical</span></h3>
+            <time>JAN 2024 — DEC 2024</time>
+          </div>
+          <ul>
+            <li>Reviewed and approved <span class="hl">50+ monthly batch records</span> for oral liquid formulations as primary QA reviewer, identifying and resolving <strong>12 GMP documentation deviations</strong> before product release, and maintaining 99.8% batch documentation compliance.</li>
+            <li>Built SOP compliance checkpoints across raw material verification, in-process controls and finished product testing — cutting batch rejections by <span class="hl">18%</span> and shortening release timelines by 5–7 days.</li>
+            <li>Authored <span class="hl">8 deviation investigations and CAPAs</span> using 5-Why and Fishbone analysis, closing recurring documentation, calibration and training issues under 21 CFR Parts 210/211 and Part 11.</li>
+            <li>Ran HPLC, UV-Vis and dissolution testing (<strong>USP Apparatus II</strong>) supporting analytical method validation to <strong>ICH Q2</strong>, generating QC data for release decisions and improving validation efficiency by 10%.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tli" style="--c:#00C2A8">
+        <div class="tlcard">
+          <div class="tlh">
+            <h3>Pharmacy Assistant<span class="org">Dirghayu Medical Store · Gujarat, India</span></h3>
+            <time>AUG 2023 — NOV 2023</time>
+          </div>
+          <ul>
+            <li>Managed inventory for <span class="hl">500+ pharmaceutical products</span>, holding storage conditions for temperature, humidity and light protection in line with Good Storage Practices.</li>
+            <li>Processed and verified <span class="hl">1,000+ prescriptions</span> — checking accuracy, dosage and drug interactions with <strong>zero dispensing errors</strong>.</li>
+            <li>Kept inventory, batch and prescription records that supported traceability and audit readiness.</li>
+            <li>Handled replenishment, expiry tracking, product recalls and controlled disposal of expired medications.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tli" style="--c:#7B4DFF">
+        <div class="tlcard">
+          <div class="tlh">
+            <h3>Manufacturing Technician Trainee<span class="org">Arogya Jyoti Pharmacy · GMP-certified facility</span></h3>
+            <time>NOV 2022 — DEC 2022</time>
+          </div>
+          <ul>
+            <li>Completed an intensive <span class="hl">4-department rotation</span> across Manufacturing, Packaging, QC Lab and QA, documenting end-to-end production workflows and escalating process improvement opportunities to operations management.</li>
+            <li>Executed GLP-compliant dissolution testing and spectroscopy on <span class="hl">15+ formulations</span>, producing the data that enabled method approval.</li>
+            <li>Held <strong>zero non-conformances</strong> across manufacturing operations by applying cGMP principles from raw material verification through to batch documentation.</li>
+            <li>Followed and documented <strong>20+ SOPs</strong> in a live regulated manufacturing environment.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="gallery">
+  <div class="wrap">
+    <div class="rv">
+      <span class="eyebrow">In practice</span>
+      <h2>Inside the work</h2>
+      <p class="sub">Photographs from the lab, the documentation desk and the training room. Hover any image for context.</p>
+    </div>
+
+    <div class="gal rv">
+      <figure class="gi big" style="--pg:linear-gradient(140deg,#2B59FF,#7B4DFF)">
+        <img src="work-1.jpg" alt="Analytical instrumentation work" onerror="this.remove()">
+        <div class="gph">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6"><path d="M9 3v6.5L4.2 18a2 2 0 0 0 1.7 3h12.2a2 2 0 0 0 1.7-3L15 9.5V3"/><path d="M8 3h8M7.5 14h9"/></svg>
+          <b>Analytical bench</b><small>Add work-1.jpg</small>
+        </div>
+        <div class="veil"></div>
+        <figcaption class="gcap"><b>Analytical bench</b><span>HPLC, UV-Vis and dissolution testing under ICH Q2</span></figcaption>
+      </figure>
+
+      <figure class="gi sm" style="--pg:linear-gradient(140deg,#00C2A8,#2B59FF)">
+        <img src="work-2.jpg" alt="Batch record review" onerror="this.remove()">
+        <div class="gph">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 15l2 2 4-4"/></svg>
+          <b>Batch records</b><small>Add work-2.jpg</small>
+        </div>
+        <div class="veil"></div>
+        <figcaption class="gcap"><b>Documentation desk</b><span>50+ batch records reviewed each month</span></figcaption>
+      </figure>
+
+      <figure class="gi third" style="--pg:linear-gradient(140deg,#FFB020,#FF5E7A)">
+        <img src="work-3.jpg" alt="Manufacturing floor" onerror="this.remove()">
+        <div class="gph">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6"><path d="M3 21V9l6 4V9l6 4V9l6 4v8z"/><path d="M6 17h.01M12 17h.01M18 17h.01"/></svg>
+          <b>Production floor</b><small>Add work-3.jpg</small>
+        </div>
+        <div class="veil"></div>
+        <figcaption class="gcap"><b>Production floor</b><span>GMP-certified facility, 4-department rotation</span></figcaption>
+      </figure>
+
+      <figure class="gi third" style="--pg:linear-gradient(140deg,#7B4DFF,#00C2A8)">
+        <img src="work-4.jpg" alt="Training session" onerror="this.remove()">
+        <div class="gph">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6"><path d="M17 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9.5" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/></svg>
+          <b>Training</b><small>Add work-4.jpg</small>
+        </div>
+        <div class="veil"></div>
+        <figcaption class="gcap"><b>Training delivery</b><span>40+ healthcare professionals trained on safe prescribing</span></figcaption>
+      </figure>
+
+      <figure class="gi third" style="--pg:linear-gradient(140deg,#0C1327,#2B59FF)">
+        <img src="work-5.jpg" alt="Research project" onerror="this.remove()">
+        <div class="gph">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6"><circle cx="12" cy="8" r="5"/><path d="M8.2 12.5 7 22l5-3 5 3-1.2-9.5"/></svg>
+          <b>Project work</b><small>Add work-5.jpg</small>
+        </div>
+        <div class="veil"></div>
+        <figcaption class="gcap"><b>Research &amp; posters</b><span>Prescription audit across two secondary care hospitals</span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section id="method">
+  <div class="wrap">
+    <div class="rv">
+      <span class="eyebrow">How I think</span>
+      <h2>The first answer is rarely the root cause</h2>
+      <p class="sub">Eight investigations taught me to keep asking. Walk through a representative calibration deviation, one why at a time.</p>
+    </div>
+
+    <div class="inv rv">
+      <div class="invh">
+        <h3>Deviation investigation · 5-Why</h3>
+        <p>DEV-REP-001 · INTERACTIVE METHOD DEMONSTRATION</p>
+      </div>
+      <div class="invb">
+        <div class="devbox">
+          <b>Deviation as reported</b>
+          An out-of-tolerance result was found on a balance used for in-process weight checks — discovered three days after the scheduled verification.
+        </div>
+
+        <ol class="whys" id="whys">
+          <li>The balance failed its scheduled calibration verification.</li>
+          <li>Verification ran on schedule, but the out-of-tolerance result wasn't escalated the same day.</li>
+          <li>The escalation step lives in a separate SOP that the daily log doesn't reference.</li>
+          <li>That cross-reference was dropped when the daily log SOP was last revised.</li>
+          <li>Change control review didn't include an impact assessment on linked documents.</li>
+        </ol>
+
+        <div class="invact">
+          <button class="btn dark" id="nextWhy">Ask the first why</button>
+          <button class="btn line" id="resetWhy">Reset</button>
+          <span class="prog" id="whyProg">0 / 5</span>
+        </div>
+
+        <div class="outcome" id="outcome">
+          <h4><i></i> Root cause</h4>
+          <p style="margin:0;color:var(--ink-2)">The change control process had no mandatory impact assessment for linked documents, so a routine revision silently removed an escalation path. The balance was the symptom; the document system was the cause.</p>
+          <div class="capa">
+            <div style="--c:#FF5E7A"><b>Correction</b><p>Quarantine affected batches, re-verify in-process weights against retained records, requalify the balance.</p></div>
+            <div style="--c:#2B59FF"><b>Corrective action</b><p>Add a mandatory linked-document impact assessment to the change control form, routed through QA.</p></div>
+            <div style="--c:#00C2A8"><b>Preventive action</b><p>Add a cross-reference check to periodic SOP review; retrain document owners and log the training.</p></div>
+          </div>
+          <p style="margin:18px 0 0;font-size:.9rem;color:var(--ink-2)"><b style="color:#7B4DFF">Effectiveness check:</b> review the next three change controls and audit 30 days of daily logs for same-day escalation compliance.</p>
+        </div>
+      </div>
+      <p class="note">Representative example built to demonstrate investigation method. Not a record from any employer — no confidential or proprietary company data appears anywhere on this site.</p>
+    </div>
+  </div>
+</section>
+
+<section id="research">
+  <div class="wrap">
+    <div class="rv">
+      <span class="eyebrow">Research project</span>
+      <h2>Prescription audit in antenatal patients</h2>
+      <p class="sub">Secondary care hospitals, Anand District, India · Gujarat Technological University</p>
+    </div>
+
+    <div class="rgrid rv">
+      <div class="panel">
+        <p style="margin-top:0;color:var(--ink-2)">A clinical audit and quality improvement initiative across two secondary care hospitals, run to surface medication-safety risks in pregnancy-related prescribing and put evidence-based interventions in place.</p>
+        <p style="color:var(--ink-2)">I audited <strong>250 antenatal prescriptions</strong> using standardized audit tools and WHO clinical audit guidelines, then designed a <strong>Pregnancy Safety Checklist</strong> to strengthen medication review and dispensing. Findings went to the hospital quality committee, which standardized documentation practices as a result. Reporting was aligned to ICH GCP principles.</p>
+
+        <div class="chromcard">
+          <h4>Analytical signature</h4>
+          <p>ILLUSTRATIVE TRACE · COMPETENCY MAP, NOT INSTRUMENT DATA</p>
+          <svg viewBox="0 0 520 150" aria-hidden="true">
+            <defs>
+              <linearGradient id="cg" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0%" stop-color="#00C2A8"/><stop offset="55%" stop-color="#2B59FF"/><stop offset="100%" stop-color="#7B4DFF"/>
+              </linearGradient>
+              <linearGradient id="cgf" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#2B59FF" stop-opacity=".45"/><stop offset="100%" stop-color="#2B59FF" stop-opacity="0"/>
+              </linearGradient>
+            </defs>
+            <line x1="14" y1="128" x2="506" y2="128" stroke="rgba(255,255,255,.22)" stroke-width="1"/>
+            <path id="cfill" fill="url(#cgf)"></path>
+            <path id="cline" fill="none" stroke="url(#cg)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </div>
+      </div>
+
+      <div class="panel">
+        <h3 style="font-family:var(--disp);font-size:1.08rem;margin:0 0 22px">Reported outcomes</h3>
+        <div id="metrics">
+          <div class="metric" style="--c:#FF5E7A"><div class="mrow"><span>Reduction in potential teratogenic exposure</span><b>22%</b></div><div class="track"><div class="fill" data-w="22"></div></div></div>
+          <div class="metric" style="--c:#00C2A8"><div class="mrow"><span>Checklist adoption by pharmacy staff</span><b>95%+</b></div><div class="track"><div class="fill" data-w="95"></div></div></div>
+          <div class="metric" style="--c:#2B59FF"><div class="mrow"><span>Reduction in inappropriate prescriptions</span><b>18%</b></div><div class="track"><div class="fill" data-w="18"></div></div></div>
+          <div class="metric" style="--c:#7B4DFF"><div class="mrow"><span>Improvement in prescribing documentation</span><b>30%</b></div><div class="track"><div class="fill" data-w="30"></div></div></div>
+        </div>
+        <div class="stats" style="grid-template-columns:1fr 1fr;margin-top:26px">
+          <div class="stat" style="--c:#2B59FF;padding:20px"><b data-n="250">0</b><span>Prescriptions audited</span></div>
+          <div class="stat" style="--c:#FFB020;padding:20px"><b data-n="40" data-suf="+">0</b><span>Professionals trained</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="education">
+  <div class="wrap">
+    <div class="rv">
+      <span class="eyebrow">Education</span>
+      <h2>Academic background</h2>
+    </div>
+    <div class="edu rv">
+      <article class="ec" style="--c:#2B59FF">
+        <div class="cap"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 2 8l10 5 10-5-10-5Z"/><path d="M6 10.5V16c0 1.5 3 3 6 3s6-1.5 6-3v-5.5"/></svg></div>
+        <h3>M.S. Pharmaceutical Sciences</h3>
+        <p>Rowan University · New Jersey, USA</p>
+        <time>EXPECTED MAY 2026</time>
+      </article>
+      <article class="ec" style="--c:#00C2A8">
+        <div class="cap"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 2 8l10 5 10-5-10-5Z"/><path d="M6 10.5V16c0 1.5 3 3 6 3s6-1.5 6-3v-5.5"/></svg></div>
+        <h3>Bachelor of Pharmacy</h3>
+        <p>Gujarat Technological University · India</p>
+        <time>JULY 2023</time>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="cta rv">
+      <div class="blob b1" style="opacity:.42"></div>
+      <div class="blob b3" style="opacity:.34"></div>
+      <span class="eyebrow" style="color:#8FA7FF;position:relative">Get in touch</span>
+      <h2>Looking for someone who reads the record before signing it?</h2>
+      <p class="lead2">I'm open to Quality Assurance and Quality Control roles in pharmaceutical manufacturing across New Jersey and the wider tri-state area.</p>
+      <div class="btns">
+        <a class="btn p" href="mailto:patelkrupa22376@gmail.com">Email Krupa</a>
+        <a class="btn s" href="https://www.linkedin.com/in/krupapatel-pharma" target="_blank" rel="noopener">Connect on LinkedIn</a>
+      </div>
+
+      <div class="trust">
+        <div><b>Email</b><a href="mailto:patelkrupa22376@gmail.com">patelkrupa22376@gmail.com</a></div>
+        <div><b>Phone</b><a href="tel:+18566524841">(856) 652-4841</a></div>
+        <div><b>LinkedIn</b><a href="https://www.linkedin.com/in/krupapatel-pharma" target="_blank" rel="noopener">/in/krupapatel-pharma</a></div>
+        <div><b>Location</b><p>New Jersey, USA</p></div>
+        <div><b>Seeking</b><p>QA / QC · pharmaceutical manufacturing</p></div>
+        <div><b>Availability</b><p>Open to discuss</p></div>
+      </div>
+
+      <p class="attest">All figures on this site are self-reported from work performed in the roles listed and can be discussed in detail on request. References and supporting documentation available on request. No confidential, proprietary or patient-identifiable information from any employer or institution is reproduced here.</p>
+    </div>
+  </div>
+</section>
+
+<footer>© 2026 Krupa Patel · Quality Assurance &amp; Quality Control</footer>
+
+<script>
+(function(){
+"use strict";
+var RM = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+/* progress bar */
+var bar=document.getElementById("bar");
+window.addEventListener("scroll",function(){
+  var h=document.documentElement;
+  var max=h.scrollHeight-h.clientHeight;
+  bar.style.width=(max>0 ? (h.scrollTop/max*100) : 0)+"%";
+},{passive:true});
+
+/* nav auto-hide */
+var nav=document.querySelector("nav"), last=0;
+window.addEventListener("scroll",function(){
+  var y=window.scrollY;
+  nav.style.transform=(y>last && y>320) ? "translateY(-140%)" : "translateY(0)";
+  last=y;
+},{passive:true});
+
+/* typing rotator */
+var ROLES=["Quality Assurance & Quality Control","Batch record review & disposition","Deviation investigation & CAPA","ICH Q2 method validation","cGMP pharmaceutical manufacturing"];
+var rot=document.getElementById("rot"), ri=0, ci=0, del=false;
+function type(){
+  var w=ROLES[ri];
+  rot.textContent = del ? w.slice(0,--ci) : w.slice(0,++ci);
+  var t = del?34:58;
+  if(!del && ci===w.length){ t=1900; del=true; }
+  else if(del && ci===0){ del=false; ri=(ri+1)%ROLES.length; t=260; }
+  setTimeout(type,t);
+}
+if(rot){ if(RM){ rot.textContent=ROLES[0]; } else { type(); } }
+
+/* reveal on scroll */
+var all=[].slice.call(document.querySelectorAll(".rv"));
+if("IntersectionObserver" in window){
+  var ro=new IntersectionObserver(function(es){
+    es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add("in"); ro.unobserve(e.target); } });
+  },{threshold:.1});
+  all.forEach(function(n){ ro.observe(n); });
+}else{
+  all.forEach(function(n){ n.classList.add("in"); });
+}
+
+/* counters */
+function countUp(el){
+  var to=parseFloat(el.getAttribute("data-n"));
+  var dec=parseInt(el.getAttribute("data-dec")||"0",10);
+  var suf=el.getAttribute("data-suf")||"";
+  if(RM){ el.textContent=to.toFixed(dec)+suf; return; }
+  var t0=null, dur=1500;
+  function step(ts){
+    if(!t0) t0=ts;
+    var p=Math.min((ts-t0)/dur,1), e=1-Math.pow(1-p,3);
+    el.textContent=(to*e).toFixed(dec)+suf;
+    if(p<1) requestAnimationFrame(step);
+  }
+  requestAnimationFrame(step);
+}
+var nums=[].slice.call(document.querySelectorAll("[data-n]"));
+var fills=[].slice.call(document.querySelectorAll(".fill"));
+if("IntersectionObserver" in window){
+  var co=new IntersectionObserver(function(es){
+    es.forEach(function(e){ if(e.isIntersecting){ countUp(e.target); co.unobserve(e.target); } });
+  },{threshold:.45});
+  nums.forEach(function(n){ co.observe(n); });
+
+  var met=document.getElementById("metrics");
+  if(met){
+    var mo=new IntersectionObserver(function(es){
+      es.forEach(function(e){
+        if(e.isIntersecting){
+          [].slice.call(e.target.querySelectorAll(".fill")).forEach(function(f,i){
+            setTimeout(function(){ f.style.width=f.getAttribute("data-w")+"%"; }, RM?0:i*140);
+          });
+          mo.unobserve(e.target);
+        }
+      });
+    },{threshold:.3});
+    mo.observe(met);
+  }
+}else{
+  nums.forEach(countUp);
+  fills.forEach(function(f){ f.style.width=f.getAttribute("data-w")+"%"; });
+}
+
+/* scroll spy */
+var links=[].slice.call(document.querySelectorAll(".navlinks a"));
+var secs=links.map(function(a){ return document.querySelector(a.getAttribute("href")); }).filter(Boolean);
+if("IntersectionObserver" in window && secs.length){
+  var so=new IntersectionObserver(function(es){
+    es.forEach(function(e){
+      if(e.isIntersecting){
+        links.forEach(function(a){ a.classList.toggle("on", a.getAttribute("href")==="#"+e.target.id); });
+      }
+    });
+  },{rootMargin:"-45% 0px -50% 0px"});
+  secs.forEach(function(s){ so.observe(s); });
+}
+
+/* chromatogram trace */
+var line=document.getElementById("cline"), fillp=document.getElementById("cfill");
+if(line){
+  var PK=[{rt:1.4,h:52,s:.30},{rt:3.0,h:80,s:.26},{rt:4.6,h:44,s:.28},{rt:6.4,h:66,s:.30},{rt:8.2,h:34,s:.32},{rt:9.6,h:26,s:.34}];
+  var X0=14,X1=506,B=128,TM=11,d="";
+  function yv(t){ var v=B; PK.forEach(function(p){ var q=t-p.rt; v-=p.h*Math.exp(-(q*q)/(2*p.s*p.s)); }); return v-Math.sin(t*9)*0.8; }
+  for(var t=0;t<=TM;t+=0.04){
+    var x=X0+(t/TM)*(X1-X0);
+    d+=(t===0?"M":"L")+x.toFixed(1)+" "+yv(t).toFixed(1)+" ";
+  }
+  line.setAttribute("d",d);
+  fillp.setAttribute("d",d+"L"+X1+" "+B+" L"+X0+" "+B+" Z");
+  if(!RM && "IntersectionObserver" in window){
+    var L=line.getTotalLength();
+    line.style.strokeDasharray=L; line.style.strokeDashoffset=L;
+    fillp.style.opacity=0; fillp.style.transition="opacity .9s ease-out 1.1s";
+    var ch=new IntersectionObserver(function(es){
+      es.forEach(function(e){
+        if(e.isIntersecting){
+          line.style.transition="stroke-dashoffset 2.2s cubic-bezier(.25,.6,.2,1)";
+          line.style.strokeDashoffset=0;
+          fillp.style.opacity=1;
+          ch.unobserve(e.target);
+        }
+      });
+    },{threshold:.35});
+    ch.observe(line.parentNode);
+  }
+}
+
+/* 5-why stepper */
+var whys=[].slice.call(document.querySelectorAll("#whys li")), step=0;
+var nb=document.getElementById("nextWhy"), rb=document.getElementById("resetWhy"),
+    pg=document.getElementById("whyProg"), oc=document.getElementById("outcome");
+function paint(){
+  whys.forEach(function(li,i){ li.classList.toggle("rev", i<step); });
+  pg.textContent=step+" / 5";
+  oc.classList.toggle("show", step>=5);
+  nb.disabled=step>=5;
+  nb.textContent = step>=5 ? "Root cause reached" : (step===0 ? "Ask the first why" : "Ask the next why");
+}
+if(nb){
+  nb.addEventListener("click",function(){ if(step<5){ step++; paint(); } });
+  rb.addEventListener("click",function(){ step=0; paint(); });
+  paint();
+}
+
+/* drop placeholders once real photos load */
+[].slice.call(document.querySelectorAll(".gi")).forEach(function(fig){
+  var img=fig.querySelector("img");
+  if(img) img.addEventListener("load",function(){ var p=fig.querySelector(".gph"); if(p) p.remove(); });
+});
+var pt=document.getElementById("portrait");
+if(pt) pt.addEventListener("load",function(){ var p=document.getElementById("portraitPh"); if(p) p.remove(); });
+})();
+</script>
+</body>
+</html>
